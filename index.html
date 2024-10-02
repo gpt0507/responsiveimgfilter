@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <h3 class="mb-0 py-3">Image Filters</h3>
+
+      <div class="col-3 clrslider-form">
+        <form id="slider-form">
+          <p>
+            <label for="gs">Grayscale</label>
+            <input id="gs" name="gs" type="range" min="" max="100" value="0" class="slider">
+          </p>
+
+          <p>
+            <label for="blur">Blur</label>
+            <input id="blur" name="blur" type="range" min="0" max="" value="0" class="slider">
+          </p>
+
+          <p>
+            <label for="hue-rotate">Hue-Rotate</label>
+            <input id="hue-rotate" name="hue-rotate" type="range" min="0" max="" value="0" class="slider">
+          </p>
+
+          <p>
+            <label for="sepia">Sepia</label>
+            <input id="sepia" name="sepia" type="range" min="0" max="" value="0" class="slider">
+          </p>
+
+          <p></p>
+          <label for="brightness">Brightness</label>
+          <input id="brightness" name="brightness" type="range" min="0" max="200" value="100" class="slider">
+          </p>
+
+          <p>
+            <label for="saturation">Saturation</label>
+            <input id="saturation" name="saturation" type="range" min="0" max="200" value="100" class="slider">
+          </p>
+
+          <p>
+            <label for="invert">Invert value</label>
+            <input id="invert" name="invert" type="range" min="0" max="100" value="0" class="slider">
+          </p>
+          <p>
+            <label for="resize">Resize</label>
+            <input id="resize" name="resize" type="range" min="0" max="" value="100" class="slider">
+          </p>
+
+          <button type="reset">Reset</button>
+        </form>
+
+      </div>
+      <div class="col-9 px-1">
+        <form id="myform">
+          <input type="text" placeholder="Image URL" id="onlineurl">
+          <button type="submit">Change Image</button>
+        </form>
+
+        <div class="img-area">
+          <a href="https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            download="image.jpg" id="downloadlink" target="_blank">
+            <img
+              src="https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              id="targetimage" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
