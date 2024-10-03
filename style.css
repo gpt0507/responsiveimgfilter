@@ -97,3 +97,12 @@ h3 {
   color: #fff;
   cursor: pointer;
 }
+
+.img-area {
+  width: 100%;
+  /* border: 1px solid #f00; */
+}
+
+.img-area img {
+  width: 100%;
+}
